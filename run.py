@@ -40,6 +40,7 @@ def step3(player_name):
     choice = input("A/B?:> ")
     return choice
 
+
 # Main game logics
 
 def main():
@@ -66,6 +67,7 @@ def main():
             print("A or B only. Please try again.")
     else:
         print("A or B only. Please try again.")
+
 
 # Checker
 
