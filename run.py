@@ -24,11 +24,21 @@ def step1():
 def step2(player_name):
     print(f"{player_name}, you find an apartment building with a barricaded entrance.")
     print("What will you do?")
-    print("A. Attempt to break through the barricade (Leads to step 3)")
-    print("B. Search for another way inside (Leads to Disaster 2)")
+    print("A. Attempt to break through the barricade")
+    print("B. Search for another way inside")
     choise = input("A/B?:> ")
     return choise
 
+
+# Ste 3 function
+
+def step3(player_name):
+    print("Having broken through the barricade, you find yourself in a dimmed lit hallway.")
+    print("What will you do?")
+    print("A. Proceed down the hallway, searching for a safe room (Leads to Step 4)")
+    print("B. Go back outside and look for a different building (Leads to Disaster 3)")
+    choise = input("A/B?:> ")
+    return choise
 
 # Main game logics
 
@@ -41,7 +51,7 @@ def main():
     elif choise.upper() == "B":
         choice = step2(player_name)
         if choice.upper() == "A":
-            print("STEP 3")
+            choice = step3(player_name)
         elif choice.upper() == "B":
             print("You find a basement entrance, but it's flooded. A hidden zombie bites you. Game over.")
         else:
