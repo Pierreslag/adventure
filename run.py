@@ -66,6 +66,16 @@ def step5(player_name):
     choice = input("A/B?:> ")
     return choice
 
+
+# Step 6 winstage
+
+def step6():
+    print("Congratulations!")
+    print("You have successfully completed the game and found a safe place, forming a team of survivors.")
+    print("Together, you are now prepared to face the challenges of the Zombie Apocalypse.")
+    print("And work towards rebuilding society.")
+
+
 # Main game logics
 
 def main():
