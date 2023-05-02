@@ -93,7 +93,7 @@ def main():
                 if choice.upper() == "A":
                     choice = step5(player_name)
                     if choice.upper() == "A":
-                        print("SLUTET")
+                        step6()
                     elif choice.upper() == "B":
                         print("After turning the survivors away.")
                         print("They feel betrayed and target you for retribution. Game over.")
