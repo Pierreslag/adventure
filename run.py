@@ -1,8 +1,12 @@
+# Welcome message and character name input
+
 def intro():
     print("Welcome to the Zombie Apocalypse outbreak adventure.")
     print("Here you will play as a survivor in a world filled with zombies.")
     name = input("To begin, please enter your adventurer's name: ")
     return name
+
+# Step 1 prints and choise input.
 
 def step1():
     print("You wake up in a wrecked car and realize the world has changed.")
@@ -13,6 +17,8 @@ def step1():
     choise = input("A/B?:> ")
     return choise
 
+# Main game logics
+
 def main():
     player_name = intro()
     choise = step1()
@@ -22,6 +28,8 @@ def main():
         print("YOU WILL GO STEP 2 HERE")
     else:
         print("A or B only. Please try again.")
+
+# Checker
 
 if __name__ == "__main__":
     main()
