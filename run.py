@@ -67,9 +67,9 @@ def main():
             if choice.upper() == "A":
                 choice = step4(player_name)
                 if choice.upper() == "A":
-                    print(STEP 5)
+                    print("STEP 5")
                 elif choice.upper() == "B":
-                    print(DISASTER 4)
+                    print("DISASTER 4")
                 else:
                     print("A or B only. Please try again.")
             elif choice.upper() == "B":
