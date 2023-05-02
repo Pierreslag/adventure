@@ -35,8 +35,8 @@ def step2(player_name):
 def step3(player_name):
     print("Having broken through the barricade, you find yourself in a dimmed lit hallway.")
     print(f"What will you do {player_name} ?")
-    print("A. Proceed down the hallway, searching for a safe room (Leads to Step 4)")
-    print("B. Go back outside and look for a different building (Leads to Disaster 3)")
+    print("A. Proceed down the hallway, searching for a safe room")
+    print("B. Go back outside and look for a different building")
     choice = input("A/B?:> ")
     return choice
 
@@ -47,8 +47,21 @@ def step4(player_name):
     print(f"{player_name}, you discover an empty apartment with a reinforced door and lock yourself inside.")
     print("Exploring the apartment, you find a well-stocked pantry and medical supplies.")
     print("What will you do?")
-    print("A. Remain in the apartment and utilize the supplies (Leads to step 5)")
-    print("B. Leave the apartment to search for more resources (Leads to Disaster 4)")
+    print("A. Remain in the apartment and utilize the supplies")
+    print("B. Leave the apartment to search for more resources")
+    choice = input("A/B?:> ")
+    return choice
+
+
+# Step 5 functions
+
+def step5(player_name):
+    print("You decide to stay and take advantage of the supplies.")
+    print("While resting, a faint knock on the door catches your attention.")
+    print("Cautiously, you open it to find a small group of survivors seeking refuge.")
+    print(f"What will you do {player_name} ?")
+    print("A. Invite the survivors in and join forces (Leads to step 6)")
+    print("B. Turn the survivors away, fearing they may pose a threat (Leads to Disaster 5)")
     choice = input("A/B?:> ")
     return choice
 
