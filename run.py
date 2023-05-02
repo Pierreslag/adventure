@@ -69,7 +69,9 @@ def main():
                 if choice.upper() == "A":
                     print("STEP 5")
                 elif choice.upper() == "B":
-                    print("DISASTER 4")
+                    print("As you leave the apartment, you stumble upon a group of bandits.")
+                    print("They take all your supplies!")
+                    print("Leaving you injured and defenseless against the encroaching zombies. Game over.")
                 else:
                     print("A or B only. Please try again.")
             elif choice.upper() == "B":
