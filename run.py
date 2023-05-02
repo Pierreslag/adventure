@@ -15,8 +15,8 @@ def step1():
     print("What will you do?")
     print("A. Stay in the car, hoping the zombies don't notice you")
     print("B. Leave the car and search for a nearby building for shelter.")
-    choise = input("A/B?:> ")
-    return choise
+    choice = input("A/B?:> ")
+    return choice
 
 
 # Step 2 functions.
@@ -26,8 +26,8 @@ def step2(player_name):
     print("What will you do?")
     print("A. Attempt to break through the barricade")
     print("B. Search for another way inside")
-    choise = input("A/B?:> ")
-    return choise
+    choice = input("A/B?:> ")
+    return choice
 
 
 # Ste 3 function
@@ -37,18 +37,18 @@ def step3(player_name):
     print("What will you do?")
     print("A. Proceed down the hallway, searching for a safe room (Leads to Step 4)")
     print("B. Go back outside and look for a different building (Leads to Disaster 3)")
-    choise = input("A/B?:> ")
-    return choise
+    choice = input("A/B?:> ")
+    return choice
 
 # Main game logics
 
 def main():
     player_name = intro()
-    choise = step1()
-    if choise.upper() == "A":
+    choice = step1()
+    if choice.upper() == "A":
         print("While you're hiding in the car, the zombies notice you and swarm the vehicle.")
         print("The windows shatter, and they pull you out of the car. Game over.")
-    elif choise.upper() == "B":
+    elif choice.upper() == "B":
         choice = step2(player_name)
         if choice.upper() == "A":
             choice = step3(player_name)
