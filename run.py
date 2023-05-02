@@ -34,7 +34,7 @@ def step2(player_name):
 
 def step3(player_name):
     print("Having broken through the barricade, you find yourself in a dimmed lit hallway.")
-    print("What will you do?")
+    print(f"What will you do {player_name} ?")
     print("A. Proceed down the hallway, searching for a safe room (Leads to Step 4)")
     print("B. Go back outside and look for a different building (Leads to Disaster 3)")
     choice = input("A/B?:> ")
@@ -52,8 +52,16 @@ def main():
         choice = step2(player_name)
         if choice.upper() == "A":
             choice = step3(player_name)
+            if choice.upper() == "A":
+                print("STEP 4")
+            elif choice.upper() == "B":
+                print("As you search for another building, a horde of zombies spots you.")
+                print("With no place to hide, the zombies quickly surround you. Game over.")
+            else:
+                print("A or B only. Please try again.")
         elif choice.upper() == "B":
-            print("You find a basement entrance, but it's flooded. A hidden zombie bites you. Game over.")
+            print("You find a basement entrance, but it's flooded.")
+            print("A hidden zombie bites you. Game over.")
         else:
             print("A or B only. Please try again.")
     else:
