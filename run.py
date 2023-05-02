@@ -30,7 +30,7 @@ def step2(player_name):
     return choice
 
 
-# Ste 3 function
+# Step 3 functions.
 
 def step3(player_name):
     print("Having broken through the barricade, you find yourself in a dimmed lit hallway.")
@@ -40,6 +40,17 @@ def step3(player_name):
     choice = input("A/B?:> ")
     return choice
 
+
+# Step 4 functions.
+
+def step4(player_name):
+    print(f"{player_name}, you discover an empty apartment with a reinforced door and lock yourself inside.")
+    print("Exploring the apartment, you find a well-stocked pantry and medical supplies.")
+    print("What will you do?")
+    print("A. Remain in the apartment and utilize the supplies (Leads to step 5)")
+    print("B. Leave the apartment to search for more resources (Leads to Disaster 4)")
+    choice = input("A/B?:> ")
+    return choice
 
 # Main game logics
 
