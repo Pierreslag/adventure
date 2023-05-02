@@ -23,7 +23,8 @@ def main():
     player_name = intro()
     choise = step1()
     if choise.upper() == "A":
-        print("Disaster 1")
+        print("While you're hiding in the car, the zombies notice you and swarm the vehicle.")
+        print("The windows shatter, and they pull you out of the car. Game over.")
     elif choise.upper() == "B":
         print("YOU WILL GO STEP 2 HERE")
     else:
