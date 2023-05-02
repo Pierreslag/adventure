@@ -80,7 +80,14 @@ def main():
             if choice.upper() == "A":
                 choice = step4(player_name)
                 if choice.upper() == "A":
-                    print("STEP 5")
+                    choice = step5(player_name)
+                    if choice.upper() == "A":
+                        print("SLUTET")
+                    elif choice.upper() == "B":
+                        print("After turning the survivors away.")
+                        print("They feel betrayed and target you for retribution. Game over.")
+                    else:
+                        print("A or B only. Please try again.")
                 elif choice.upper() == "B":
                     print("As you leave the apartment, you stumble upon a group of bandits.")
                     print("They take all your supplies!")
