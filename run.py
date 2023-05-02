@@ -102,7 +102,7 @@ def main():
                 elif choice.upper() == "B":
                     print("As you leave the apartment, you stumble upon a group of bandits.")
                     print("They take all your supplies!")
-                    print("Leaving you injured and selfless against the zombies. Game over.")
+                    print("Leaving you injured and helpless against the zombies. Game over.")
                 else:
                     print("A or B only. Please try again.")
             elif choice.upper() == "B":
