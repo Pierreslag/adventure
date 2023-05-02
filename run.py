@@ -6,6 +6,7 @@ def intro():
     name = input("To begin, please enter your adventurer's name: ")
     return name
 
+
 # Step 1 functions.
 
 def step1():
@@ -17,15 +18,17 @@ def step1():
     choise = input("A/B?:> ")
     return choise
 
+
 # Step 2 functions.
 
 def step2(player_name):
-    print(f"{player_name},you find an apartment building with a barricaded entrance.")
+    print(f"{player_name}, you find an apartment building with a barricaded entrance.")
     print("What will you do?")
     print("A. Attempt to break through the barricade (Leads to step 3)")
     print("B. Search for another way inside (Leads to Disaster 2)")
     choise = input("A/B?:> ")
     return choise
+
 
 # Main game logics
 
@@ -40,7 +43,7 @@ def main():
         if choice.upper() == "A":
             print("STEP 3")
         elif choice.upper() == "B":
-            print("Disaster 2")
+            print("You find a basement entrance, but it's flooded. A hidden zombie bites you. Game over.")
         else:
             print("A or B only. Please try again.")
     else:
