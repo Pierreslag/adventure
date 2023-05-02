@@ -61,8 +61,8 @@ def step5(player_name):
     print("While resting, a faint knock on the door catches your attention.")
     print("Cautiously, you open it to find a small group of survivors seeking refuge.")
     print(f"What will you do {player_name} ?")
-    print("A. Invite the survivors in and join forces (Leads to step 6)")
-    print("B. Turn the survivors away, fearing they may pose a threat (Leads to Disaster 5)")
+    print("A. Invite the survivors in and join forces")
+    print("B. Turn the survivors away, fearing they may pose a threat")
     choice = input("A/B?:> ")
     return choice
 
@@ -71,7 +71,8 @@ def step5(player_name):
 
 def step6():
     print("Congratulations!")
-    print("You have successfully completed the game and found a safe place, forming a team of survivors.")
+    print("You have successfully completed the game and found a safe place.")
+    print("And formed a team of survivors.")
     print("Together, you are now prepared to face the challenges of the Zombie Apocalypse.")
     print("And work towards rebuilding society.")
 
