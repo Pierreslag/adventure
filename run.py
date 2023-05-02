@@ -44,7 +44,8 @@ def step3(player_name):
 # Step 4 functions.
 
 def step4(player_name):
-    print(f"{player_name}, you discover an empty apartment with a reinforced door and lock yourself inside.")
+    print(f"{player_name}, you discover an empty apartment with a reinforced door.")
+    print("You lock yourself inside.")
     print("Exploring the apartment, you find a well-stocked pantry and medical supplies.")
     print("What will you do?")
     print("A. Remain in the apartment and utilize the supplies")
@@ -91,7 +92,7 @@ def main():
                 elif choice.upper() == "B":
                     print("As you leave the apartment, you stumble upon a group of bandits.")
                     print("They take all your supplies!")
-                    print("Leaving you injured and defenseless against the encroaching zombies. Game over.")
+                    print("Leaving you injured and selfless against the zombies. Game over.")
                 else:
                     print("A or B only. Please try again.")
             elif choice.upper() == "B":
