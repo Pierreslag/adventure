@@ -65,7 +65,13 @@ def main():
         if choice.upper() == "A":
             choice = step3(player_name)
             if choice.upper() == "A":
-                print("STEP 4")
+                choice = step4(player_name)
+                if choice.upper() == "A":
+                    print(STEP 5)
+                elif choice.upper() == "B":
+                    print(DISASTER 4)
+                else:
+                    print("A or B only. Please try again.")
             elif choice.upper() == "B":
                 print("As you search for another building, a horde of zombies spots you.")
                 print("With no place to hide, the zombies quickly surround you. Game over.")
