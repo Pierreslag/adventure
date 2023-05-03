@@ -25,9 +25,10 @@ The game will present you with a series of scenarios and choices. You'll need to
 ## Testing
 Ive tested this project with:
 - [Python Linter](https://pep8ci.herokuapp.com/) validation test.
-- Input testing numbers and letters. A/a and B/a.
+- Input testing numbers and letters. A/a and B/b only works.
 - Storyline testing.
 ## Deployment
 
 ## Credits
+- Special thanks to [Code Institute](https://codeinstitute.net/) for their support and guidance.
 
