@@ -10,7 +10,7 @@ The game will present you with a series of scenarios and choices. You'll need to
 
 ## Features
 - Enganging storyline set in a post-apocalyptic world filled with zombies.
-- Decision based gameplay with few choices and outcomes.
+- Decision based gameplay with a set of choices and outcomes.
 - Simple and intuitive user interface that requires only A or B inputs to progress.
 
 ![coice 2](Image_URL)
