@@ -19,8 +19,8 @@ The game will present you with a series of scenarios and choices. You'll need to
 
 
 ## Future features
-- Other stories
-- Longer gameplay ingame
+- Other storylines featuring new characters, environments, and challenges.
+- Longer gameplay with additional choices and branching story paths.
 
 ## Testing
 Ive tested this project with:
