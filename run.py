@@ -30,8 +30,12 @@ def step2(player_name):
     print("What will you do?")
     print("A. Attempt to break through the barricade")
     print("B. Search for another way inside")
-    choice = input("A/B?:> ")
-    return choice
+    while True:    
+        choice = input("A/B?:> ")
+        if choice.upper() in ["A", "B"]:
+            return choice
+        else:
+            print("A or B only. Please try again.")
 
 
 # Step 3 functions.
@@ -41,8 +45,12 @@ def step3(player_name):
     print(f"What will you do {player_name} ?")
     print("A. Proceed down the hallway, searching for a safe room")
     print("B. Go back outside and look for a different building")
-    choice = input("A/B?:> ")
-    return choice
+    while True:    
+        choice = input("A/B?:> ")
+        if choice.upper() in ["A", "B"]:
+            return choice
+        else:
+            print("A or B only. Please try again.")
 
 
 # Step 4 functions.
@@ -54,8 +62,12 @@ def step4(player_name):
     print("What will you do?")
     print("A. Remain in the apartment and utilize the supplies")
     print("B. Leave the apartment to search for more resources")
-    choice = input("A/B?:> ")
-    return choice
+    while True:    
+        choice = input("A/B?:> ")
+        if choice.upper() in ["A", "B"]:
+            return choice
+        else:
+            print("A or B only. Please try again.")
 
 
 # Step 5 functions
@@ -67,8 +79,12 @@ def step5(player_name):
     print(f"What will you do {player_name} ?")
     print("A. Invite the survivors in and join forces")
     print("B. Turn the survivors away, fearing they may pose a threat")
-    choice = input("A/B?:> ")
-    return choice
+    while True:    
+        choice = input("A/B?:> ")
+        if choice.upper() in ["A", "B"]:
+            return choice
+        else:
+            print("A or B only. Please try again.")
 
 
 # Step 6 winstage
