@@ -122,6 +122,8 @@ def main():
                     choice = step5(player_name)
                     if choice.upper() == "A":
                         step6()
+                        if not replay():
+                            break
                     elif choice.upper() == "B":
                         print("After turning the survivors away.")
                         print("They feel betrayed and target you for retribution. Game over.")
@@ -145,6 +147,9 @@ def main():
             print("A or B only. Please try again.")
     else:
         print("A or B only. Please try again.")
+
+    if not replay():
+        break
 
 
 # Checker
