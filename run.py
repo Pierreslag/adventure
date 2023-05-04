@@ -97,6 +97,13 @@ def step6():
     print("And work towards rebuilding society.")
 
 
+# Replay function
+
+def replay():
+    choice = input("Replay? (Y/N)> ")
+    return choice.upper() == "Y"
+
+
 # Main game logics
 
 def main():
