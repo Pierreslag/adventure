@@ -104,53 +104,54 @@ def replay():
     return choice.upper() == "Y"
 
 
+# Lose function
+def lose(message):
+    print(message)
+    print("Game over.")
+
+
+
 # Main game logics
 
 def main():
-    player_name = intro()
-    choice = step1()
-    if choice.upper() == "A":
-        print("While you're hiding in the car, the zombies notice you and swarm the vehicle.")
-        print("The windows shatter, and they pull you out of the car. Game over.")
-    elif choice.upper() == "B":
-        choice = step2(player_name)
+    while True:
+        player_name = intro()
+        choice = step1()
         if choice.upper() == "A":
-            choice = step3(player_name)
+            lose("While hiding in the car, zombies notice you, swarm the vehicle, and pull you out.")
+        elif choice.upper() == "B":
+            choice = step2(player_name)
             if choice.upper() == "A":
-                choice = step4(player_name)
+                choice = step3(player_name)
                 if choice.upper() == "A":
-                    choice = step5(player_name)
+                    choice = step4(player_name)
                     if choice.upper() == "A":
-                        step6()
-                        if not replay():
-                            break
+                        choice = step5(player_name)
+                        if choice.upper() == "A":
+                            step6()
+                            if not replay():
+                                print("Thanks for playing!.")
+                                break
+                        elif choice.upper() == "B":
+                            lose("After turning the survivors away, they target you for retribution.")
                     elif choice.upper() == "B":
-                        print("After turning the survivors away.")
-                        print("They feel betrayed and target you for retribution. Game over.")
+                        lose("As you leave, bandits take your supplies, leaving you helpless.")
                     else:
                         print("A or B only. Please try again.")
                 elif choice.upper() == "B":
-                    print("As you leave the apartment, you stumble upon a group of bandits.")
-                    print("They take all your supplies!")
-                    print("Leaving you injured and helpless against the zombies. Game over.")
+                    lose("As you search, a horde of zombies spots and surrounds you.")
                 else:
                     print("A or B only. Please try again.")
             elif choice.upper() == "B":
-                print("As you search for another building, a horde of zombies spots you.")
-                print("With no place to hide, the zombies quickly surround you. Game over.")
+                lose("You find a flooded basement entrance and get bitten by a hidden zombie.")
             else:
                 print("A or B only. Please try again.")
-        elif choice.upper() == "B":
-            print("You find a basement entrance, but it's flooded.")
-            print("A hidden zombie bites you. Game over.")
         else:
             print("A or B only. Please try again.")
-    else:
-        print("A or B only. Please try again.")
 
-    if not replay():
-        break
-
+        if not replay():
+            print("Thanks for playing! Bye!")
+            break
 
 # Checker
 
