@@ -15,8 +15,12 @@ def step1():
     print("What will you do?")
     print("A. Stay in the car, hoping the zombies don't notice you")
     print("B. Leave the car and search for a nearby building for shelter.")
-    choice = input("A/B?:> ")
-    return choice
+    while True:    
+        choice = input("A/B?:> ")
+        if choice.upper() in ["A", "B"]:
+            return choice
+        else:
+            print("A or B only. Please try again.")
 
 
 # Step 2 functions.
