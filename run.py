@@ -15,7 +15,7 @@ def step1():
     print("What will you do?")
     print("A. Stay in the car, hoping the zombies don't notice you")
     print("B. Leave the car and search for a nearby building for shelter.")
-    while True:    
+    while True:
         choice = input("A/B?:> ")
         if choice.upper() in ["A", "B"]:
             return choice
@@ -30,7 +30,7 @@ def step2(player_name):
     print("What will you do?")
     print("A. Attempt to break through the barricade")
     print("B. Search for another way inside")
-    while True:    
+    while True:
         choice = input("A/B?:> ")
         if choice.upper() in ["A", "B"]:
             return choice
@@ -45,7 +45,7 @@ def step3(player_name):
     print(f"What will you do {player_name} ?")
     print("A. Proceed down the hallway, searching for a safe room")
     print("B. Go back outside and look for a different building")
-    while True:    
+    while True:
         choice = input("A/B?:> ")
         if choice.upper() in ["A", "B"]:
             return choice
@@ -62,7 +62,7 @@ def step4(player_name):
     print("What will you do?")
     print("A. Remain in the apartment and utilize the supplies")
     print("B. Leave the apartment to search for more resources")
-    while True:    
+    while True:
         choice = input("A/B?:> ")
         if choice.upper() in ["A", "B"]:
             return choice
@@ -79,7 +79,7 @@ def step5(player_name):
     print(f"What will you do {player_name} ?")
     print("A. Invite the survivors in and join forces")
     print("B. Turn the survivors away, fearing they may pose a threat")
-    while True:    
+    while True:
         choice = input("A/B?:> ")
         if choice.upper() in ["A", "B"]:
             return choice
@@ -110,8 +110,7 @@ def lose(message):
     print("Game over.")
 
 
-
-# Main game logics
+# Main gamelogics
 
 def main():
     while True:
