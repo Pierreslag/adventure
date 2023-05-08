@@ -1,6 +1,7 @@
-# Welcome message and character name input
-
 def intro():
+    """
+    Welcomes the player and asks for the adventurers name
+    """
     print("Welcome to the Zombie Apocalypse outbreak adventure.")
     print("Here you will play as a survivor in a world filled with zombies.")
     name = input("To begin, please enter your adventurer's name: ")
@@ -10,6 +11,9 @@ def intro():
 # Step 1 functions.
 
 def step1():
+    """
+    First scenario presented here.
+    """
     print("You wake up in a wrecked car and realize the world has changed.")
     print("Zombies roam the streets. You need to escape and find a safe place to hide.")
     print("What will you do?")
@@ -26,6 +30,9 @@ def step1():
 # Step 2 functions.
 
 def step2(player_name):
+    """
+    Second scenario presented here.
+    """
     print(f"{player_name}, you find an apartment building with a barricaded entrance.")
     print("What will you do?")
     print("A. Attempt to break through the barricade")
@@ -41,6 +48,9 @@ def step2(player_name):
 # Step 3 functions.
 
 def step3(player_name):
+    """
+    Third scenario presented here.
+    """
     print("Having broken through the barricade, you find yourself in a dimmed lit hallway.")
     print(f"What will you do {player_name} ?")
     print("A. Proceed down the hallway, searching for a safe room")
@@ -56,6 +66,9 @@ def step3(player_name):
 # Step 4 functions.
 
 def step4(player_name):
+    """
+    Fourth scenario presented here.
+    """
     print(f"{player_name}, you discover an empty apartment with a reinforced door.")
     print("You lock yourself inside.")
     print("Exploring the apartment, you find a well-stocked pantry and medical supplies.")
@@ -73,6 +86,9 @@ def step4(player_name):
 # Step 5 functions
 
 def step5(player_name):
+    """
+    Fifth scenario presented here.
+    """
     print("You decide to stay and take advantage of the supplies.")
     print("While resting, a faint knock on the door catches your attention.")
     print("Cautiously, you open it to find a small group of survivors seeking refuge.")
@@ -90,6 +106,9 @@ def step5(player_name):
 # Step 6 winstage
 
 def step6():
+    """
+    Winstage scenario presented here.
+    """
     print("Congratulations!")
     print("You have successfully completed the game and found a safe place.")
     print("And formed a team of survivors.")
@@ -100,12 +119,18 @@ def step6():
 # Replay function
 
 def replay():
+    """
+    This function asks for replay if adventurer dies or completes the adventure.
+    """
     choice = input("Replay? (Y/N)> ")
     return choice.upper() == "Y"
 
 
 # Lose function
 def lose(message):
+    """
+    Function for print message game over if player lose.
+    """
     print(message)
     print("Game over.")
 
@@ -113,6 +138,9 @@ def lose(message):
 # Main gamelogics
 
 def main():
+    """
+    This is the main function and logics for the game.
+    """
     while True:
         player_name = intro()
         choice = step1()
