@@ -128,9 +128,6 @@ def main():
                         choice = step5(player_name)
                         if choice.upper() == "A":
                             step6()
-                            if not replay():
-                                print("Thanks for playing!.")
-                                break
                         elif choice.upper() == "B":
                             lose("After turning the survivors away, they target you for retribution.")
                     elif choice.upper() == "B":
