@@ -1,3 +1,19 @@
+class Player:
+    """
+    Player class score and name register
+    """
+    def __init__(self, name):
+        self.name = name
+        self.score = 0
+
+    def add_points(self, points):
+        self.score += points
+
+    def get_score(self):
+        return self.score
+
+# Welcome message and adventure name input.
+
 def intro():
     """
     Welcomes the player and asks for the adventurers name
