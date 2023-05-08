@@ -2,6 +2,7 @@
 Zombie Apocalypse outbreak game
 """
 
+
 class Player:
     """
     Player class score and name register
