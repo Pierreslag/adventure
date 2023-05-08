@@ -1,3 +1,7 @@
+"""
+Zombie Apocalypse outbreak game
+"""
+
 class Player:
     """
     Player class score and name register
@@ -7,9 +11,15 @@ class Player:
         self.score = 0
 
     def add_points(self, points):
+        """
+        Adds the points to the player score
+        """
         self.score += points
 
     def get_score(self):
+        """
+        Return player score or not if score is zero.
+        """
         if self.score > 0:
             return self.score
         else:
