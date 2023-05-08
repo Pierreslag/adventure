@@ -46,7 +46,8 @@ def step1(player):
     First scenario presented here.
     """
     print("You wake up in a wrecked car and realize the world has changed.")
-    print("Zombies roam the streets. You need to escape and find a safe place to hide.")
+    print("Zombies roam the streets.")
+    print("You need to escape and find a safe place to hide.")
     print("What will you do?")
     print("A. Stay in the car, hoping the zombies don't notice you")
     print("B. Leave the car and search for a nearby building for shelter.")
@@ -66,7 +67,7 @@ def step2(player):
     """
     Second scenario presented here.
     """
-    print(f"{player.name}, you find an apartment building with a barricaded entrance.")
+    print(f"{player.name}, you find an building with a barricaded entrance.")
     print("What will you do?")
     print("A. Attempt to break through the barricade")
     print("B. Search for another way inside")
@@ -86,7 +87,8 @@ def step3(player):
     """
     Third scenario presented here.
     """
-    print("Having broken through the barricade, you find yourself in a dimmed lit hallway.")
+    print("Having broken through the barricade, \n"
+          "you find yourself in a dimmed lit hallway.")
     print(f"What will you do {player.name} ?")
     print("A. Proceed down the hallway, searching for a safe room")
     print("B. Go back outside and look for a different building")
@@ -106,9 +108,11 @@ def step4(player):
     """
     Fourth scenario presented here.
     """
-    print(f"{player.name}, you discover an empty apartment with a reinforced door.")
+    print(f"{player.name}, you discover an empty apartment with a \n"
+          "reinforced door.")
     print("You lock yourself inside.")
-    print("Exploring the apartment, you find a well-stocked pantry and medical supplies.")
+    print("Exploring the apartment, \n"
+          "you find a well-stocked pantry and medical supplies.")
     print("What will you do?")
     print("A. Remain in the apartment and utilize the supplies")
     print("B. Leave the apartment to search for more resources")
@@ -130,7 +134,8 @@ def step5(player):
     """
     print("You decide to stay and take advantage of the supplies.")
     print("While resting, a faint knock on the door catches your attention.")
-    print("Cautiously, you open it to find a small group of survivors seeking refuge.")
+    print("Cautiously, you open it to find a small group of survivors \n"
+          "seeking refuge.")
     print(f"What will you do {player.name} ?")
     print("A. Invite the survivors in and join forces")
     print("B. Turn the survivors away, fearing they may pose a threat")
@@ -153,7 +158,8 @@ def step6(player):
     print("Congratulations!")
     print("You have successfully completed the game and found a safe place.")
     print("And formed a team of survivors.")
-    print("Together, you are now prepared to face the challenges of the Zombie Apocalypse.")
+    print("Together, you are now prepared to face the challenges of \n"
+          "the Zombie Apocalypse.")
     print("And work towards rebuilding society.")
 
     score = player.get_score()
@@ -165,7 +171,7 @@ def step6(player):
 
 def replay():
     """
-    This function asks for replay if adventurer dies or completes the adventure.
+    This function asks for replay if adventurer dies or complete.
     """
     choice = input("Replay? (Y/N)> ")
     return choice.upper() == "Y"
@@ -190,7 +196,8 @@ def main():
         player = intro()
         choice = step1(player)
         if choice.upper() == "A":
-            lose("While hiding in the car, zombies notice you, swarm the vehicle, and pull you out.")
+            lose("While hiding in the car, zombies notice you, \n"
+                 "swarm the vehicle, and pull you out.")
         elif choice.upper() == "B":
             choice = step2(player)
             if choice.upper() == "A":
@@ -202,17 +209,20 @@ def main():
                         if choice.upper() == "A":
                             step6(player)
                         elif choice.upper() == "B":
-                            lose("After turning the survivors away, they target you for retribution.")
+                            lose("After turning the survivors away, \n"
+                                 "they target you for retribution.")
                     elif choice.upper() == "B":
-                        lose("As you leave, bandits take your supplies, leaving you helpless.")
+                        lose("As you leave, bandits take your supplies, \n"
+                             "leaving you helpless.")
                     else:
                         print("A or B only. Please try again.")
                 elif choice.upper() == "B":
-                    lose("As you search, a horde of zombies spots and surrounds you.")
+                    lose("As you search, a horde of zombies surrounds you.")
                 else:
                     print("A or B only. Please try again.")
             elif choice.upper() == "B":
-                lose("You find a flooded basement entrance and get bitten by a hidden zombie.")
+                lose("You find a flooded basement entrance \n"
+                     "and get bitten by a hidden zombie.")
             else:
                 print("A or B only. Please try again.")
         else:
@@ -221,6 +231,7 @@ def main():
         if not replay():
             print("Thanks for playing! Bye!")
             break
+
 
 # Checker
 
