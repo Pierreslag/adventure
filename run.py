@@ -135,7 +135,7 @@ def step5(player):
 
 # Step 6 winstage
 
-def step6():
+def step6(player):
     """
     Winstage scenario presented here.
     """
@@ -144,6 +144,10 @@ def step6():
     print("And formed a team of survivors.")
     print("Together, you are now prepared to face the challenges of the Zombie Apocalypse.")
     print("And work towards rebuilding society.")
+
+    score = player.get_score()
+    if score is not None:
+        print(f"Final score: {score}")
 
 
 # Replay function
@@ -185,7 +189,7 @@ def main():
                     if choice.upper() == "A":
                         choice = step5(player)
                         if choice.upper() == "A":
-                            step6()
+                            step6(player)
                         elif choice.upper() == "B":
                             lose("After turning the survivors away, they target you for retribution.")
                     elif choice.upper() == "B":
