@@ -6,7 +6,7 @@ This is a text-based adventure game where you play as a survivor in a world fill
 ![](https://i.imgur.com/2rEybUj.png)
 
 ## How to play
-The game will present you with a series of scenarios and choices. You'll need to make decisions by entering A or B in response to the prompts. Your choices will determine the outcome of the game and whether you survive or meet a horrible end. To start your adventure simply enter youre adventurers name and press "Enter".
+The game will present you with a series of scenarios and choices. You'll need to make decisions by entering A or B in response to the prompts. Your choices will determine the outcome of the game and whether you survive or meet a horrible end. To start your adventure simply enter your adventurers name and press "Enter".
 
 ![First choice](https://i.imgur.com/Mjkjpkg.png)
 
