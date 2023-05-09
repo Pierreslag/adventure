@@ -32,11 +32,16 @@ Ive tested this project with:
 - Disaster and retry testing
 
 ## Deployment
-
+- Steps for deployment
+    - Create a new repository on GitHub.
+    - Clone the repository to your workspace using "git clone [repository_url]".
+    - Create a Heroku app and use the key is "PORT" and the value is "8000" to create a new Config Var.
+    - Add heroku/python and heroku/jsnode as building packs.
+    - Link the heroku app to your GitHub repo.
+    - Deploy!
 ## Credits
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/) - A powerfull, lightweight open source IDE developed by Microsoft. It offers features such as intergrated Git suppert, debugging and many many other extentions. I used VSCode as my IDE for this project.
 - [GitHub](https://github.com/) - A web-based plattform for version control and collab using Git. It allows developers to work on projects from anywhere.
 I used GitHub my source code managment, version control and to share my project.
 - [Heroku](https://www.heroku.com/) - A cloud-based PaaS service (Platform As A Service) that let you build, run and operate applications. I used Heroku to deploy my project.
 - Special thanks to [Code Institute](https://codeinstitute.net/) for their support and guidance.
-
