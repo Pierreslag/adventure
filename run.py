@@ -27,8 +27,6 @@ class Player:
             return None
 
 
-# Welcome message and adventure name input.
-
 def intro():
     """
     Welcomes the player and asks for the adventurers name
@@ -38,8 +36,6 @@ def intro():
     name = input("To begin, please enter your adventurer's name. \n")
     return Player(name)
 
-
-# Step 1 functions.
 
 def step1(player):
     """
@@ -61,8 +57,6 @@ def step1(player):
             print("A or B only. Please try again.")
 
 
-# Step 2 functions.
-
 def step2(player):
     """
     Second scenario presented here.
@@ -80,8 +74,6 @@ def step2(player):
         else:
             print("A or B only. Please try again.")
 
-
-# Step 3 functions.
 
 def step3(player):
     """
@@ -101,8 +93,6 @@ def step3(player):
         else:
             print("A or B only. Please try again.")
 
-
-# Step 4 functions.
 
 def step4(player):
     """
@@ -126,8 +116,6 @@ def step4(player):
             print("A or B only. Please try again.")
 
 
-# Step 5 functions
-
 def step5(player):
     """
     Fifth scenario presented here.
@@ -149,8 +137,6 @@ def step5(player):
             print("A or B only. Please try again.")
 
 
-# Step 6 winstage
-
 def step6(player):
     """
     Winstage scenario presented here.
@@ -167,8 +153,6 @@ def step6(player):
         print(f"Final score: {score}")
 
 
-# Replay function
-
 def replay():
     """
     This function asks for replay if adventurer dies or complete.
@@ -177,7 +161,6 @@ def replay():
     return choice.upper() == "Y"
 
 
-# Lose function
 def lose(message):
     """
     Function for print message game over if player lose.
@@ -185,8 +168,6 @@ def lose(message):
     print(message)
     print("Game over.")
 
-
-# Main gamelogics
 
 def main():
     """
@@ -232,8 +213,6 @@ def main():
             print("Thanks for playing! Bye!")
             break
 
-
-# Checker
 
 if __name__ == "__main__":
     main()
