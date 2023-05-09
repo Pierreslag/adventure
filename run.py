@@ -35,7 +35,7 @@ def intro():
     """
     print("Welcome to the Zombie Apocalypse outbreak adventure.")
     print("Here you will play as a survivor in a world filled with zombies.")
-    name = input("To begin, please enter your adventurer's name: ")
+    name = input("To begin, please enter your adventurer's name: \n")
     return Player(name)
 
 
@@ -52,7 +52,7 @@ def step1(player):
     print("A. Stay in the car, hoping the zombies don't notice you")
     print("B. Leave the car and search for a nearby building for shelter.")
     while True:
-        choice = input("A/B?:> ")
+        choice = input("A/B?:> \n")
         if choice.upper() in ["A", "B"]:
             if choice.upper() == "B":
                 player.add_points(10)
@@ -72,7 +72,7 @@ def step2(player):
     print("A. Attempt to break through the barricade")
     print("B. Search for another way inside")
     while True:
-        choice = input("A/B?:> ")
+        choice = input("A/B?:> \n")
         if choice.upper() in ["A", "B"]:
             if choice.upper() == "A":
                 player.add_points(10)
@@ -93,7 +93,7 @@ def step3(player):
     print("A. Proceed down the hallway, searching for a safe room")
     print("B. Go back outside and look for a different building")
     while True:
-        choice = input("A/B?:> ")
+        choice = input("A/B?:> \n")
         if choice.upper() in ["A", "B"]:
             if choice.upper() == "A":
                 player.add_points(10)
@@ -117,7 +117,7 @@ def step4(player):
     print("A. Remain in the apartment and utilize the supplies")
     print("B. Leave the apartment to search for more resources")
     while True:
-        choice = input("A/B?:> ")
+        choice = input("A/B?:> \n")
         if choice.upper() in ["A", "B"]:
             if choice.upper() == "A":
                 player.add_points(10)
@@ -140,7 +140,7 @@ def step5(player):
     print("A. Invite the survivors in and join forces")
     print("B. Turn the survivors away, fearing they may pose a threat")
     while True:
-        choice = input("A/B?:> ")
+        choice = input("A/B?:> \n")
         if choice.upper() in ["A", "B"]:
             if choice.upper() == "A":
                 player.add_points(10)
@@ -173,7 +173,7 @@ def replay():
     """
     This function asks for replay if adventurer dies or complete.
     """
-    choice = input("Replay? (Y/N)> ")
+    choice = input("Replay? (Y/N)> \n")
     return choice.upper() == "Y"
 
 
