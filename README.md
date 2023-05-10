@@ -29,9 +29,13 @@ The game will present you with a series of scenarios and choices. You'll need to
 ## Testing
 Ive tested this project with:
 - [Python Linter](https://pep8ci.herokuapp.com/) validation test. No Error.
-- Input testing numbers and letters. A/a and B/b only works.
+- Browsers tested:
+    - Chrome
+    - Brave
+- Input testing with numbers. A/a and B/b only works.
+- Input testing with letters. A/a and B/b only works.
 - Storyline testing.
-- Disaster and retry testing
+- Disaster and retry testing.
 
 ## Deployment
 - Steps for deployment
