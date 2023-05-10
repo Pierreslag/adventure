@@ -13,7 +13,7 @@ The game will present you with a series of scenarios and choices. You'll need to
 ## Features
 - Enganging storyline set in a post-apocalyptic world filled with zombies.
 - Decision based gameplay with a set of choices and outcomes.
-- Simple and intuitive user interface that requires only A or B inputs to progress.
+- Simple user interface that requires only A or B inputs to progress.
 
 ![choice](https://i.imgur.com/5rqLhRd.png)
 
@@ -34,8 +34,8 @@ Ive tested this project with:
 ## Deployment
 - Steps for deployment
     - Create a new repository on GitHub.
-    - Clone the repository to your workspace using "git clone [repository_url]".
-    - Create a Heroku app and use the key is "PORT" and the value is "8000" to create a new Config Var.
+    - Clone the repository to your workspace.
+    - Create a Heroku app here i used the key "PORT" and the value "8000" to create a new Config Var.
     - Add heroku/python and heroku/jsnode as building packs.
     - Link the heroku app to your GitHub repo.
     - Deploy!
